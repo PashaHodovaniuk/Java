@@ -1,0 +1,16 @@
+public class NormalType {
+	static int i;
+	static long l;
+	static char c;
+	static byte b;
+	static boolean bl;
+	static float f;
+	static double d;
+	
+	static public void infoType() {
+		
+	}
+	
+	
+	
+}

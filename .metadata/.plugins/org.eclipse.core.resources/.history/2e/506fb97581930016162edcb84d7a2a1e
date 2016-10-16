@@ -1,0 +1,22 @@
+public class NormalType {
+	static int i;
+	static long l;
+	static char c;
+	static byte b;
+	static boolean bl;
+	static float f;
+	static double d;
+	
+	static public void infoType() {
+		InOut.Outln("Boolean = " + bl + " Max =" + Boolean.TRUE + " Min =" + Boolean.FALSE);
+		InOut.Outln("Char [" + c + "]" + Integer.toHexString(c | 0x10000).substring(1));
+		InOut.Outln("Byte = " + b + " Max =" + Byte.MAX_VALUE + " Min =" +  Byte.MIN_VALUE);
+		InOut.Outln("Integer = " + i + " Max =" + Integer.MAX_VALUE + " Min =" +  Integer.MIN_VALUE);
+		InOut.Outln("Long = " + l + " Max =" + Long.MAX_VALUE + " Min =" +  Long.MIN_VALUE);
+		InOut.Outln("Float = " + f + " Max =" + Float.MAX_VALUE + " Min =" +  Float.MIN_VALUE);
+		InOut.Outln("Double = " + d + " Max =" + Double.MAX_VALUE + " Min =" +  Double.MIN_VALUE);
+	}
+	
+	
+	
+}

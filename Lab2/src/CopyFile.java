@@ -1,0 +1,47 @@
+import java.io.*;
+
+public class CopyFile {
+	FileInputStream fin;
+	PrintWriter writer;
+
+	public CopyFile(String[] args) throws IOException {
+		try {
+			try {
+				fin = new FileInputStream(args[0]);
+			} catch (FileNotFoundException e) {
+				InOut.outLn("Файл для ввода не найден");
+				return;
+			}
+			try {
+				writer = new PrintWriter(args[1], "UTF-8");
+			} catch (FileNotFoundException e) {
+				InOut.outLn("Файл для выводна не найден");
+				fin.close();
+				return;
+			}
+		} catch (ArrayIndexOutOfBoundsException e) {
+			InOut.outLn("Использование: CopyFile исходный целевой");
+			return;
+		}
+	}
+
+	public void working() {
+		int readFileBit;
+		int E = 0; // Энергия
+		try {
+			do {
+				readFileBit = fin.read();
+				if (readFileBit != -1)
+					E += readFileBit * readFileBit;
+			} while (readFileBit != -1);
+			writer.println("E = " + E);
+		} catch (IOException e) {
+			InOut.outLn("Ошибка файла");
+		}
+	}
+
+	public void Close() throws IOException {
+		fin.close();
+		writer.close();
+	}
+}

@@ -11,8 +11,7 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 			return;
-		}
-		
+		}		
 		NormalType.infoType();
 	}
 

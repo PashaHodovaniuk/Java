@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InOut.java&apos; to &apos;RGR_Security/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Lab2&apos;&#x0D;&#x0A;- Destination element: &apos;RGR_Security/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;InOut.java&apos;" description="Copy compilation unit" destination="=RGR_Security/src&lt;" element1="/src&lt;{InOut.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1479400979877" units="1" version="1.0"/>
+</session>

@@ -2,7 +2,7 @@ public class Oven extends MainComponent {
 	private static int temperature = 90;
 
 	public Oven() {
-		name = "Вытяжка";
+		name = "Духовка";
 		state = false;
 		strain = false;
 	}

@@ -1,0 +1,49 @@
+public class MenuCoffeeMaker extends MenuRealize {
+
+	public void Select() {
+		InOut.Outln("1 - Вкл/выкл напряжение");
+		InOut.Outln("2 - Вкл/выкл устройтсво");
+		InOut.Outln("3 - ");
+	}
+
+	public void runMenu() {
+
+		Select();
+		String selected;
+		selected = InOut.In();
+		CoffeeMaker cMaker = new CoffeeMaker();
+
+		switch (selected) {
+		case "1": {
+			cMaker.stStrain();
+			if (cMaker.getStrain()) {
+				InOut.Outln("Напряжение подключино");
+			} else {
+				InOut.Outln("Напряжение отключино");
+			}
+		}
+			break;
+		case "2":{
+			cMaker.stState();
+			if (cMaker.getState()) {
+				InOut.Outln("Устройство включино");
+			} else {
+				InOut.Outln("Устройство выключино");
+			}
+		}			
+			break;
+		case "3":
+			
+			break;
+		case "4":
+			
+			break;
+		case "5":
+			
+			break;
+		default:
+			break;
+		}
+	}
+
+}

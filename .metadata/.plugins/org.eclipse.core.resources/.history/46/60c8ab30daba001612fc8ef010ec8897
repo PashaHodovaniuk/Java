@@ -1,0 +1,16 @@
+
+public class MenuWashingMachineWState extends MenuRealize {
+
+	WashingMachine wMachine = new WashingMachine();
+
+	public void Select() {
+		InOut.Outln(wMachine.getName());
+		InOut.Outln("1 - Следующий режим");
+		InOut.Outln("Нажмите любую кнопку, чтобы вернуться в главное меню");
+	}
+
+	public void runMenu() {
+
+	}
+
+}

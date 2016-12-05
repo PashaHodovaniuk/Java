@@ -1,0 +1,20 @@
+
+public class MenuCoffeeMakerMode extends MenuRealize {
+
+	CoffeeMaker cMaker = new CoffeeMaker();
+	@Override
+	public void Select() {
+		InOut.Outln(cMaker.getName());
+		InOut.Outln("1 - Эспрессо");
+		InOut.Outln("2 - Капучино");
+		InOut.Outln("3 - Латте");
+		InOut.Outln("Нажмите любую кнопку, чтобы вернуться в главное меню");
+	}
+
+	@Override
+	public void runMenu() {
+		
+
+	}
+
+}

@@ -9,7 +9,7 @@ public class CoffeeMaker extends MainComponent {
 		state = false;
 		strain = false;
 	}
-	
+
 	public void modeEspresso() {
 		mode = ModesOfCoffeeMaker.Espresso;
 	}
@@ -21,10 +21,10 @@ public class CoffeeMaker extends MainComponent {
 	public void modeLatte() {
 		mode = ModesOfCoffeeMaker.Latte;
 	}
-	
-	public ModesOfCoffeeMaker getMode(){
+
+	public ModesOfCoffeeMaker getMode() {
 		return mode;
-	}	
+	}
 
 	public boolean runMode(ModesOfCoffeeMaker modes, byte valCoffee, boolean pencaVal) {
 		if (check()) {

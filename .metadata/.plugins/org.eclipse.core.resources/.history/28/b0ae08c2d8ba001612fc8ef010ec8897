@@ -1,0 +1,14 @@
+
+public class MenuWishingMachine extends MenuRealize {
+	
+	public void Select() {
+		InOut.Outln("1 - Вкл/выкл напряжение");
+		InOut.Outln("2 - Вкл/выкл устройтсво");
+		InOut.Outln("3 - Настройка температуры");
+		InOut.Outln("Нажмите любую кнопку, чтобы вернуться в главное меню");
+	}
+	
+	public void runMenu(){
+		
+	}
+}

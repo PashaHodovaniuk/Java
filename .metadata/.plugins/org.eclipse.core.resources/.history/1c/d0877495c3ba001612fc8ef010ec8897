@@ -1,0 +1,10 @@
+public class Menu {
+	
+	public void Select (){
+	InOut.Outln("1 - Кофеварка");
+	InOut.Outln("2 - Духовка");
+	InOut.Outln("3 - Кондиционер");
+	InOut.Outln("4 - Вытяжка");
+	InOut.Outln("5 - Стиральная машинка");
+	}
+}

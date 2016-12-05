@@ -1,0 +1,17 @@
+
+public class MenuWashingMachine extends MenuRealize {
+	
+	WashingMachine wMachine = new WashingMachine();
+	
+	public void Select() {
+		InOut.Outln(aConditioning.getName());
+		InOut.Outln("1 - Вкл/выкл напряжение");
+		InOut.Outln("2 - Вкл/выкл устройтсво");
+		InOut.Outln("3 - Настройка температуры");
+		InOut.Outln("Нажмите любую кнопку, чтобы вернуться в главное меню");
+	}
+	
+	public void runMenu(){
+		
+	}
+}

@@ -1,0 +1,37 @@
+public class MenuOven extends MenuRealize {
+	
+	public void Select() {
+		InOut.Outln("1 - Вкл/выкл напряжение");
+		InOut.Outln("2 - Вкл/выкл устройтсво");
+		InOut.Outln("3 - Настройка температуры");
+		InOut.Outln("Нажмите любую кнопку, чтобы вернуться в главное меню");
+	}
+	
+	public void runMenu(){
+		Select();		
+		String selected;
+		selected = InOut.In();
+		Oven o = new Oven();
+
+		switch (selected) {
+		case "1":
+			menu = new MenuCoffeeMaker();
+			break;
+		case "2":
+			menu = new MenuOver();
+			break;
+		case "3":
+			menu = new MenuAirConditioning();
+			break;
+		case "4":
+			menu = new MenuCookerHood();
+			break;
+		case "5":
+			menu = new MenuWishingMachine();
+			break;
+		default:
+			break;
+		}
+	}
+
+}

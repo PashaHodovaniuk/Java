@@ -1,6 +1,5 @@
 public class WashingMachineAdapter {
 	private WashingMachine wMachine = new WashingMachine();
-	private String[] state = {"Деликатная","Синтетика","Хлопок","Отжим","Полоскание"};
 
 	public void stState() {
 		wMachine.stState();

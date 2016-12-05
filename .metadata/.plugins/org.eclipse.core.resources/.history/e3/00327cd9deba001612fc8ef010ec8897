@@ -1,0 +1,16 @@
+
+public class MenuCoffeeMakerMode extends MenuRealize {
+
+	@Override
+	public void Select() {
+		
+
+	}
+
+	@Override
+	public void runMenu() {
+		
+
+	}
+
+}

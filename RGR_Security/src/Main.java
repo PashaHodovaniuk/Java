@@ -6,22 +6,9 @@ public class Main {
 	public static void main(String[] args) {
 		BigInteger bigNumber;
 		
-		/*int currentNumber, dividers;
-		for (currentNumber = 1; currentNumber < 1000; currentNumber++) {
-			dividers = 0;
-			for (int i = 1; i <= currentNumber; i++) {
-				if (currentNumber % i == 0)
-					dividers++;
-			}
-			if (dividers <= 2) {
-				bigNumber = bigNumber.multiply(BigInteger.valueOf(currentNumber));
-			}
-		}
-		bigNumber = bigNumber.add(BigInteger.valueOf(1511));*/
 		InOut.Out("Enter you number: ");
 		int numVar = new Integer(InOut.In());
 		bigNumber = ProductРrimes(numVar);
-		//System.out.println("1511");
 		System.out.println(bigNumber.toString());
 
 		if (BefinitionPrimeNumber(bigNumber)) {

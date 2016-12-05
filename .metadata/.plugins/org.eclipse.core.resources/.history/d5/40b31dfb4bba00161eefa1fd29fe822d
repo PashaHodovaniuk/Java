@@ -1,0 +1,7 @@
+
+public class MainComponent {
+	protected String name; //Имя
+	protected boolean state; //Состояние вкл/выкл
+	protected boolean strain; //Напряжение (электричество)
+
+}

@@ -1,0 +1,39 @@
+
+public class MainComponent {
+	protected String name; // Имя
+	protected boolean state; // Состояние вкл/выкл
+	protected boolean strain; // Напряжение (электричество)
+
+	protected boolean check() {
+		return state && strain;
+	}
+	
+	public String getName(){
+		return name;
+	}
+
+	public void onStrain() {
+		strain = true;
+	}
+
+	public void offStrain() {
+		strain = false;
+	}
+
+	public boolean getStrain() {
+		return strain;
+	}
+
+	public void onState() {
+		state = true;
+	}
+
+	public void offState() {
+		state = false;
+	}
+
+	public boolean getState() {
+		return state;
+	}
+
+}

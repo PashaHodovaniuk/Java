@@ -1,0 +1,22 @@
+public class AirConditioningAdapter {
+	private AirConditioning aConditioning = new AirConditioning();
+	
+	public void stState(){
+		aConditioning.stState();
+	}
+	
+	public void stStrain(){
+		aConditioning.stStrain();
+	}	
+	
+	
+	
+	public void stateClearAir(){
+		aConditioning.stClearAir();
+	}
+	
+	public boolean getClearAir(){
+		return aConditioning.getClearAir();
+	}
+
+}

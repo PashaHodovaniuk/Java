@@ -1,0 +1,18 @@
+public class AirConditioning extends MainComponent {
+	private static boolean clearAir = false;
+
+	public AirConditioning() {
+		name = "Кондиционер";
+		state = false;
+		strain = false;
+	}
+
+	public void stClearAir() {
+		clearAir = !clearAir;
+	}
+
+	public boolean getClearAir() {
+		return clearAir;
+	}
+
+}

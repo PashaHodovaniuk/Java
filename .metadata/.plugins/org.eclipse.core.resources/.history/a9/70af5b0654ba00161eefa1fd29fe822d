@@ -1,0 +1,12 @@
+public class AirConditioningAdapter {
+	private AirConditioning aConditioning = new AirConditioning();
+	
+	public void stateClearAir(){
+		aConditioning.stateClearAir();
+	}
+	
+	public boolean getClearAir(){
+		return aConditioning.getClearAir();
+	}
+
+}

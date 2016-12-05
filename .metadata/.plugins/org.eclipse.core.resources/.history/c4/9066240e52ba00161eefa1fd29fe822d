@@ -1,0 +1,9 @@
+public class AirConditioning extends MainComponent {
+	public AirConditioning() {
+		name = "Кондиционер";
+		state = false;
+		strain = false;
+	}
+
+
+}

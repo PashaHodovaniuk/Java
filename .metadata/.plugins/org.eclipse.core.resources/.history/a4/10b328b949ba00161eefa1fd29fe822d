@@ -1,0 +1,26 @@
+
+public class CoffeeMarkerAdapter {
+	private CoffeeMaker coffee;
+	
+	public void onState(){
+		coffee.onState();
+	}
+	
+	public void offState(){
+		coffee.offState();
+	}
+	
+	public void onStrain(){
+		coffee.onStrain();
+	}
+	
+	public void offStrain(){
+		coffee.offStrain();
+	}
+	
+	public boolean run(ModesOfCoffeeMaker modes, byte  valCoffee, boolean pencaVal)
+	{
+		return coffee.runMode(modes, valCoffee, pencaVal);				
+	}
+
+}

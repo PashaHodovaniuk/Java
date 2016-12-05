@@ -1,0 +1,71 @@
+
+public class CoffeeMaker extends MainComponent {	
+	private static byte volumeCoffee[] = {50,100};
+	private static boolean penca = false;
+	private ModesOfCoffeeMaker mode = ModesOfCoffeeMaker.Espresso;
+	public CoffeeMaker(){
+		name = "Кофеварка";
+		state = false;
+		strain = false;
+	}
+	
+	public void onStrain(){
+		strain = true;
+	}
+	
+	public void offStrain(){
+		strain = false;
+	}
+	
+	public void onState(){
+		state = true;
+	}
+	
+	public void offState(){
+		state = false;
+	}
+	
+	public boolean runMode(ModesOfCoffeeMaker modes, byte  valCoffee, boolean pencaVal){
+		if(state == true)
+		{
+			if (strain == true) {
+				switch(modes)
+				{
+				case (ModesOfCoffeeMaker) modes.Espresso:
+					if (valCoffee == volumeCoffee[0] || valCoffee == volumeCoffee[1])
+					{
+						mode = modes; 
+						penca = pencaVal;
+						return true;
+					}
+				break;
+				case (ModesOfCoffeeMaker) modes.Cappuccino:
+					if (valCoffee == volumeCoffee[0] || valCoffee == volumeCoffee[1])
+					{
+						mode = modes; 
+						penca = pencaVal;
+						return true;
+					}
+				break;
+				case (ModesOfCoffeeMaker) modes.Latte:
+					if (valCoffee == volumeCoffee[0] || valCoffee == volumeCoffee[1])
+					{
+						mode = modes; 
+						penca = pencaVal;
+						return true;
+					}
+				break;
+				default:
+					return false;
+				}
+			} 
+			else{
+				return false;
+			}			
+		}
+		else {
+			return false;
+		}
+	}
+	
+}

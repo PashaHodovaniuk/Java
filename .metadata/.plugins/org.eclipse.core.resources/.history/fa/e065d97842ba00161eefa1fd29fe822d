@@ -1,0 +1,12 @@
+
+public class CoffeeMaker extends MainComponent {	
+	private static byte volumeCoffee[] = {50,100};
+	private static boolean penca = false;
+	public CoffeeMaker(){
+		name = "Кофеварка";
+		state = false;
+		strain = false;
+	}
+	
+	
+}
